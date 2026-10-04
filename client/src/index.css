@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', 'Noto Sans', 'Noto Sans Devanagari', 'Noto Sans Bengali',
+    'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Kannada',
+    'Noto Sans Malayalam', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi',
+    system-ui, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* RTL support for Urdu */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+[dir="rtl"] .flex { flex-direction: row-reverse; }
+[dir="rtl"] .space-y-2 > :not(:last-child) { margin-top: 0; margin-bottom: 0.5rem; }
+
+.dark body { background-color: #0f172a; color: #f1f5f9; }
+
+@layer components {
+  .btn-primary {
+    @apply bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-green-700 font-semibold py-2.5 px-6 rounded-xl border-2 border-green-600 transition-all duration-200 active:scale-95;
+  }
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-xl transition-all duration-200 active:scale-95;
+  }
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6;
+  }
+  .glass-card {
+    @apply backdrop-blur-md bg-white/80 dark:bg-gray-800/80 rounded-2xl shadow-lg border border-white/20;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-all duration-200;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold;
+  }
+  .badge-green { @apply badge bg-green-100 text-green-700; }
+  .badge-orange { @apply badge bg-orange-100 text-orange-700; }
+  .badge-red { @apply badge bg-red-100 text-red-700; }
+  .badge-blue { @apply badge bg-blue-100 text-blue-700; }
+  .stat-card {
+    @apply card flex flex-col gap-2;
+  }
+  .section-title {
+    @apply text-3xl font-bold text-gray-900 dark:text-white;
+  }
+  .section-subtitle {
+    @apply text-gray-500 dark:text-gray-400 mt-2;
+  }
+}
+
+.leaflet-container { border-radius: 1rem; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 3px; }
+
+.animate-ticker { animation: ticker 30s linear infinite; }
+@keyframes ticker {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Premium utility additions */
+.bg-hero-pattern {
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 30%, #047857 60%, #059669 100%);
+}
+
+.group:hover .group-hover\:scale-108 {
+  transform: scale(1.08);
+}
+
+/* Glass card premium */
+.glass-premium {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Glow accent */
+.glow-green {
+  box-shadow: 0 0 20px rgba(34,197,94,0.3), 0 4px 24px rgba(0,0,0,0.1);
+}
+
+/* Smooth section fade-in */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Pulse ring for live indicators */
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+.pulse-ring::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: currentColor;
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+/* Skeleton shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+.dark .skeleton-shimmer {
+  background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+  background-size: 200% 100%;
+}
+
