@@ -1,0 +1,7 @@
+{
+  "nav": { "home": "হোম", "marketplace": "বজাৰ", "cart": "কাৰ্ট", "orders": "মোৰ অৰ্ডাৰ", "login": "লগইন", "register": "পঞ্জীয়ন", "logout": "লগআউট", "dashboard": "ডেছব'ৰ্ড", "notifications": "জাননী", "addProduct": "সামগ্ৰী যোগ কৰক", "nearby": "ওচৰৰ" },
+  "hero": { "title": "পথাৰৰ পৰা পোনপটীয়াকৈ ঘৰলৈ তাজা সামগ্ৰী", "subtitle": "স্থানীয় কৃষকসকলৰ সৈতে পোনপটীয়াকৈ সংযোগ কৰক।", "cta": "এতিয়াই কিনক", "cta2": "কৃষক হিচাপে যোগ দিয়ক", "tagline": "কোনো মধ্যৱৰ্তী নাই।" },
+  "marketplace": { "title": "পথাৰৰ পৰা তাজা", "search": "তাজা পাচলি, ফল, শস্য বিচাৰক...", "addToCart": "কাৰ্টত যোগ কৰক", "noProducts": "কোনো সামগ্ৰী পোৱা নগ'ল", "clearFilters": "ফিল্টাৰ পৰিষ্কাৰ কৰক", "viewAll": "সকলো চাওক" },
+  "home": { "compareTitle": "স্থানীয় বজাৰ বনাম KrishiSetu", "compareSubtitle": "কৃষকসকলৰ পৰা পোনপটীয়াকৈ কিনক।", "featuredTitle": "শীৰ্ষ ৰেটেড সামগ্ৰী", "whyTitle": "KrishiSetu কিয় বাছনি কৰিব?" },
+  "common": { "loading": "লোড হৈছে...", "error": "কিবা এটা ভুল হৈছে", "viewAll": "সকলো চাওক", "getStarted": "বিনামূলীয়াকৈ আৰম্ভ কৰক" }
+}

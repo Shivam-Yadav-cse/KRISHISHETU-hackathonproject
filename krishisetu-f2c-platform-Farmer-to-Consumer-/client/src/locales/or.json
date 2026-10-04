@@ -1,0 +1,7 @@
+{
+  "nav": { "home": "ହୋମ", "marketplace": "ବଜାର", "cart": "କାର୍ଟ", "orders": "ମୋ ଅର୍ଡର", "login": "ଲଗଇନ", "register": "ପଞ୍ଜୀକରଣ", "logout": "ଲଗଆଉଟ", "dashboard": "ଡ୍ୟାସ୍ବୋର୍ଡ", "notifications": "ବିଜ୍ଞପ୍ତି", "addProduct": "ଉତ୍ପାଦ ଯୋଡ଼ନ୍ତୁ", "nearby": "ନିକଟ" },
+  "hero": { "title": "ଖେତରୁ ସିଧାସଳଖ ଘରକୁ ତାଜା ଉତ୍ପାଦ", "subtitle": "ସ୍ଥାନୀୟ କୃଷକଙ୍କ ସହ ସିଧାସଳଖ ସଂଯୋଗ କରନ୍ତୁ।", "cta": "ଏବେ କିଣନ୍ତୁ", "cta2": "କୃଷକ ଭାବରେ ଯୋଗ ଦିଅନ୍ତୁ", "tagline": "କୌଣସି ମଧ୍ୟସ୍ଥ ନାହିଁ।" },
+  "marketplace": { "title": "ଖେତରୁ ତାଜା", "search": "ତାଜା ପନିପରିବା, ଫଳ, ଶସ୍ୟ ଖୋଜନ୍ତୁ...", "addToCart": "କାର୍ଟରେ ଯୋଡ଼ନ୍ତୁ", "noProducts": "କୌଣସି ଉତ୍ପାଦ ମିଳିଲା ନାହିଁ", "clearFilters": "ଫିଲ୍ଟର ସଫା କରନ୍ତୁ", "viewAll": "ସବୁ ଦେଖନ୍ତୁ" },
+  "home": { "compareTitle": "ସ୍ଥାନୀୟ ବଜାର ବନାମ KrishiSetu", "compareSubtitle": "କୃଷକଙ୍କଠାରୁ ସିଧାସଳଖ କିଣନ୍ତୁ।", "featuredTitle": "ସର୍ବୋଚ୍ଚ ରେଟ୍ ଉତ୍ପାଦ", "whyTitle": "KrishiSetu କାହିଁକି ବାଛିବେ?" },
+  "common": { "loading": "ଲୋଡ ହେଉଛି...", "error": "କିଛି ଭୁଲ ହୋଇଗଲା", "viewAll": "ସବୁ ଦେଖନ୍ତୁ", "getStarted": "ମାଗଣାରେ ଆରମ୍ଭ କରନ୍ତୁ" }
+}
